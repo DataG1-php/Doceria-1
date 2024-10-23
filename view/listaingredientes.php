@@ -9,7 +9,7 @@
   
   <script type="text/javascript">
       function deletar(idingredientes){
-          if(confirm('deseja excluir o registro?')){
+          if(confirm('Deseja excluir o registro?')){
               document.location.href='../controller/ingredienteBO.php?acao=deletar&idingredientes='+idingredientes;
           }
       }
