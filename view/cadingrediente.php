@@ -28,10 +28,9 @@
     <div class="container">
       <div class="menu-lateral">
         <ul>
-            <li><a href="listaingredientes.php">Ingredientes</a></li>
-            <li><a href="listaitens.php">Itens utilizados</a></li>
-            <li><a href="listareceita.php">Receitas</a></li>
-            <li><a href="#">Sair</a></li>          
+          <li><a href="listaingredientes.php">Ingredientes</a></li>
+          <li><a href="#">Receitas</a></li>
+          <li><a href="#">Sair</a></li>
         </ul>
       </div>      
       <div class="conteudo">

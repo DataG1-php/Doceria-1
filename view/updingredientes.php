@@ -28,30 +28,17 @@
     <div class="container">
       <div class="menu-lateral">
         <ul>
-            <li><a href="listaingredientes.php">Ingredientes</a></li>
-            <li><a href="listaitens.php">Itens utilizados</a></li>
-            <li><a href="listareceita.php">Receitas</a></li>
-            <li><a href="#">Sair</a></li>          
+          <li><a href="listaingredientes.php">Ingredientes</a></li>
+          <li><a href="#">Receitas</a></li>
+          <li><a href="#">Sair</a></li>
         </ul>
-      </div>      
-        <div class="conteudo">
-          <form action="../controller/ingredienteBO.php" method="post">
-          <?php
-            include_once '../model/database/IngredienteDAO.php';
-            $dao = new IngredienteDAO();
-            $id = $_GET['idingredientes'];
-            $lista = $dao->list($id);
-            foreach ($lista as $value) {
-          ?>
+      </div>      <div class="conteudo">
+        <form action="#" method="post">
           <label>Nome:</label>
-          <input type="text" name="txtnome" value="<?php echo $value->descricao;?>"><br><br>
+          <input type="text" name="txtnome"><br><br>
           <input type="hidden" name="acao" value="alterar"/>
-          <input type="hidden" name="idingredientes" value="<?php echo $value->idingredientes;?>"/>
           <input type="submit" name="btnAlterar" value="Alterar"/>
           <input type="reset" name="btnLimpar" value="Limpar"/>
-        <?php 
-            }
-        ?>
         </form>
       </div>
     </div>

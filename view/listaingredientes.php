@@ -36,11 +36,10 @@
     </div>
     <div class="container">
       <div class="menu-lateral">
-<ul>
-            <li><a href="listaingredientes.php">Ingredientes</a></li>
-            <li><a href="listaitens.php">Itens utilizados</a></li>
-            <li><a href="listareceita.php">Receitas</a></li>
-          <li><a href="#">Sair</a></li>          
+        <ul>
+          <li><a href="listaingredientes.php">Ingredientes</a></li>
+          <li><a href="#">Receitas</a></li>
+          <li><a href="#">Sair</a></li>
         </ul>
       </div>
       <div class="conteudo">
@@ -77,7 +76,7 @@
             ?>
           </tbody>
         </table>
-        <button name="btncadingrediente" onclick="location.href='cadingrediente.php'">Cadastrar ingrediente</button>
+        <button style="float: right" name="btncadingrediente" onclick="location.href='cadingrediente.php'">Cadastrar ingrediente</button>
       </div>
     </div>
     <div class="rodape">
